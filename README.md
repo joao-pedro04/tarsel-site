@@ -7,7 +7,7 @@ Projeto separado da ferramenta de consulta de provedores ([Tarsel-Consultas](htt
 ## Estrutura
 
 ```
-Tarsel-Website/
+tarsel-site/
 ├── index.html      # Página inicial
 ├── css/styles.css  # Estilos
 ├── js/main.js      # Interatividade
@@ -17,7 +17,7 @@ Tarsel-Website/
 ## Visualizar localmente
 
 ```bash
-cd Tarsel-Website
+cd tarsel-site
 python3 -m http.server 8080
 ```
 
