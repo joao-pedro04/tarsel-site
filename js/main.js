@@ -74,4 +74,93 @@
       }, 3000);
     });
   }
+
+  // Clients carousel
+  const carousel = document.querySelector('[data-clients-carousel]');
+  if (carousel) {
+    const track = carousel.querySelector('.clients-carousel__track');
+    const items = Array.from(carousel.querySelectorAll('.clients-carousel__item'));
+    const prevBtn = carousel.querySelector('.clients-carousel__btn--prev');
+    const nextBtn = carousel.querySelector('.clients-carousel__btn--next');
+    const dotsContainer = carousel.querySelector('.clients-carousel__dots');
+
+    let currentIndex = 0;
+    let visibleCount = 4;
+    let autoplayTimer = null;
+    let isPaused = false;
+
+    function getVisibleCount() {
+      if (window.innerWidth <= 480) return 1;
+      if (window.innerWidth <= 768) return 2;
+      if (window.innerWidth <= 1024) return 3;
+      return 4;
+    }
+
+    function getMaxIndex() {
+      return Math.max(0, items.length - visibleCount);
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      const total = getMaxIndex() + 1;
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'clients-carousel__dot' + (i === currentIndex ? ' clients-carousel__dot--active' : '');
+        dot.setAttribute('aria-label', `Ir para slide ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateDots() {
+      dotsContainer.querySelectorAll('.clients-carousel__dot').forEach((dot, i) => {
+        dot.classList.toggle('clients-carousel__dot--active', i === currentIndex);
+      });
+    }
+
+    function goTo(index) {
+      currentIndex = Math.max(0, Math.min(index, getMaxIndex()));
+      const itemWidth = items[0].offsetWidth + 24;
+      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      updateDots();
+    }
+
+    function next() {
+      goTo(currentIndex >= getMaxIndex() ? 0 : currentIndex + 1);
+    }
+
+    function prev() {
+      goTo(currentIndex <= 0 ? getMaxIndex() : currentIndex - 1);
+    }
+
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayTimer = setInterval(() => {
+        if (!isPaused) next();
+      }, 3500);
+    }
+
+    function stopAutoplay() {
+      if (autoplayTimer) clearInterval(autoplayTimer);
+    }
+
+    prevBtn.addEventListener('click', () => { prev(); startAutoplay(); });
+    nextBtn.addEventListener('click', () => { next(); startAutoplay(); });
+
+    carousel.addEventListener('mouseenter', () => { isPaused = true; });
+    carousel.addEventListener('mouseleave', () => { isPaused = false; });
+
+    window.addEventListener('resize', () => {
+      visibleCount = getVisibleCount();
+      if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+      buildDots();
+      goTo(currentIndex);
+    });
+
+    visibleCount = getVisibleCount();
+    buildDots();
+    goTo(0);
+    startAutoplay();
+  }
 })();

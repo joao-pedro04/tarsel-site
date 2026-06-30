@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="DigitalLink">
+  <rect width="220" height="80" rx="10" fill="#f4f2f8"/>
+  <rect x="26" y="30" width="20" height="20" rx="4" fill="none" stroke="#4a2d9e" stroke-width="2.5"/>
+  <text x="62" y="46" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#30107b">DigitalLink</text>
+</svg>

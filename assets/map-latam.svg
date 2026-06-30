@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 580" fill="none" role="img" aria-label="Mapa da America Latina com clientes Tarsel">
+  <defs>
+    <linearGradient id="ocean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fc"/>
+      <stop offset="100%" stop-color="#f0f2f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="580" fill="url(#ocean)"/>
+  <g stroke="#e2e6ef" stroke-width="0.5" opacity="0.8">
+    <line x1="0" y1="116" x2="500" y2="116"/><line x1="0" y1="232" x2="500" y2="232"/>
+    <line x1="0" y1="348" x2="500" y2="348"/><line x1="0" y1="464" x2="500" y2="464"/>
+    <line x1="100" y1="0" x2="100" y2="580"/><line x1="200" y1="0" x2="200" y2="580"/>
+    <line x1="300" y1="0" x2="300" y2="580"/><line x1="400" y1="0" x2="400" y2="580"/>
+  </g>
+  <path d="M95 72 L155 58 L215 68 L255 88 L240 118 L200 128 L150 120 L110 100 Z" fill="#e8ebf2" stroke="#c5ccd8" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M200 128 L235 122 L268 138 L258 168 L225 178 L198 162 L188 142 Z" fill="#e8ebf2" stroke="#c5ccd8" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M188 142 L228 135 L268 148 L285 175 L278 205 L248 218 L215 210 L190 188 L178 162 Z" fill="#e8ebf2" stroke="#c5ccd8" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M178 162 L215 210 L248 218 L278 205 L310 225 L345 260 L365 310 L372 360 L358 410 L325 445 L285 458 L245 448 L215 420 L195 380 L185 330 L188 280 L195 240 L178 210 Z" fill="#e8ebf2" stroke="#c5ccd8" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M248 218 L310 225 L345 260 L365 310 L358 380 L320 420 L275 435 L240 420 L220 370 L225 310 L235 250 Z" fill="#dfe3ec" stroke="#c5ccd8" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M178 210 L192 240 L200 300 L198 380 L188 450 L168 470 L158 400 L162 320 L168 260 Z" fill="#d5dae6" stroke="#c5ccd8" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M215 420 L245 448 L285 458 L300 500 L275 530 L235 520 L210 480 L205 440 Z" fill="#e8ebf2" stroke="#c5ccd8" stroke-width="1" stroke-linejoin="round"/>
+  <g transform="translate(228, 178)">
+    <circle r="22" fill="#4a2d9e" opacity="0.12"/>
+    <circle r="8" fill="#4a2d9e" stroke="#ffffff" stroke-width="2.5"/>
+    <text y="28" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1040">Colombia</text>
+  </g>
+  <g transform="translate(252, 158)">
+    <circle r="22" fill="#4a2d9e" opacity="0.12"/>
+    <circle r="8" fill="#4a2d9e" stroke="#ffffff" stroke-width="2.5"/>
+    <text y="28" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1040">Venezuela</text>
+  </g>
+  <g transform="translate(295, 310)">
+    <circle r="22" fill="#4a2d9e" opacity="0.12"/>
+    <circle r="8" fill="#4a2d9e" stroke="#ffffff" stroke-width="2.5"/>
+    <text y="28" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1040">Brasil</text>
+  </g>
+  <g transform="translate(178, 340)">
+    <circle r="22" fill="#4a2d9e" opacity="0.12"/>
+    <circle r="8" fill="#4a2d9e" stroke="#ffffff" stroke-width="2.5"/>
+    <text y="28" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1040">Chile</text>
+  </g>
+</svg>

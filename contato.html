@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Tarsel — fale com nossos especialistas em inteligência de rede para ISPs.">
+  <title>Contato — Tarsel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/logo-transparent.png" type="image/png">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Tarsel — Página inicial">
+        <img src="assets/logo-transparent.png" alt="Tarsel" class="header__logo-img">
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre nós</a></li>
+          <li><a href="produtos.html" class="nav__link">Produtos</a></li>
+          <li><a href="contato.html" class="nav__link nav__link--active">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="contato.html" class="btn btn--primary">Fale conosco</a>
+      </div>
+      <button class="header__toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-header__eyebrow">Contato</p>
+        <h1 class="page-hero__title">Fale com nossos especialistas</h1>
+        <p class="page-hero__subtitle">Nossos consultores estão prontos para atendê-lo e mostrar como a Tarsel pode ajudar seu ISP a prosperar.</p>
+      </div>
+    </section>
+
+    <section class="cta cta--page">
+      <div class="container">
+        <div class="cta__inner">
+          <div class="cta__content">
+            <h2>Envie sua mensagem</h2>
+            <p>Preencha o formulário e nossa equipe retornará o mais breve possível.</p>
+            <ul class="contact-info">
+              <li><strong>E-mail:</strong> contato@tarsel.com.br</li>
+              <li><strong>Atendimento:</strong> Segunda a sexta, 9h às 18h</li>
+              <li><strong>Presença:</strong> Chile, Colômbia, Venezuela e Brasil</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contact-form">
+          <div class="contact-form__row">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="form-group">
+              <label for="empresa">Empresa / ISP</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Nome do provedor">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Enviar mensagem</button>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-transparent.png" alt="Tarsel" class="footer__logo">
+        <p>Telemetry, Analysis of Routing and Security of Links.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="sobre.html#missao">Missão</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="produtos.html">Telemetria</a></li>
+            <li><a href="produtos.html">Segurança DDoS</a></li>
+            <li><a href="produtos.html">Otimização de Rotas</a></li>
+            <li><a href="produtos.html">Peering</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">LGPD</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container"><p>&copy; 2026 Tarsel — Todos os direitos reservados.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

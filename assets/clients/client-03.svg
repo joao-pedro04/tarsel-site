@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="Conecta ISP">
+  <rect width="220" height="80" rx="10" fill="#f4f2f8"/>
+  <circle cx="36" cy="40" r="10" fill="none" stroke="#4a2d9e" stroke-width="2.5"/>
+  <circle cx="36" cy="40" r="3" fill="#4a2d9e"/>
+  <text x="62" y="46" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#30107b">Conecta ISP</text>
+</svg>
