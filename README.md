@@ -1,17 +1,22 @@
 # Tarsel — Site Institucional
 
-Site institucional da **Tarsel** (software de análise de tráfego e segurança para ISPs).
+Site institucional da **Tarsel** (software de análise de tráfego e segurança para provedores).
 
-Projeto separado da ferramenta de consulta de provedores ([Tarsel-Consultas](https://github.com/joao-pedro04/Tarsel-Consultas)).
 
 ## Estrutura
 
 ```
 tarsel-site/
-├── index.html      # Página inicial
-├── css/styles.css  # Estilos
-├── js/main.js      # Interatividade
-└── assets/         # Logo e imagens
+├── index.html          # Home
+├── sobre.html          # Sobre nós
+├── produtos.html       # Produtos e soluções
+├── contato.html        # Formulário de contato
+├── css/styles.css      # Estilos
+├── js/main.js          # Menu, stats, carrossel, formulário
+└── assets/
+    ├── logo-transparent.png
+    ├── map-world.svg   # Mapa de presença (América Latina)
+    └── clients/        # Logos do carrossel
 ```
 
 ## Visualizar localmente
@@ -21,16 +26,15 @@ cd tarsel-site
 python3 -m http.server 8080
 ```
 
-Abra [http://127.0.0.1:8080](http://127.0.0.1:8080) no navegador.
+Abra [http://localhost:8080](http://localhost:8080) no navegador.
 
-## Deploy
+## Stack
 
-Site estático — pode ser publicado em Cloudflare Pages, Netlify, GitHub Pages ou qualquer host de arquivos estáticos.
+HTML, CSS e JavaScript puro — sem build, sem dependências.
 
-## Páginas planejadas
+## Pendências (MVP)
 
-- [x] Home
-- [ ] Sobre nós
-- [ ] Missão
-- [ ] Contato
-- [ ] Produtos / Soluções
+- Substituir logos fictícios dos clientes por logos reais
+- Email e textos finais no formulário de contato
+- Páginas legais (LGPD, termos, privacidade)
+- Backend ou serviço externo para envio do formulário
