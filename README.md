@@ -1,7 +1,6 @@
 # Tarsel — Site Institucional
 
-Site institucional da **Tarsel** (software de análise de tráfego e segurança para provedores).
-
+Site institucional da **Tarsel** (software de análise de tráfego e segurança para ISPs).
 
 ## Estrutura
 

@@ -311,13 +311,129 @@ ul {
   line-height: 1.5;
 }
 
-/* Network globe visual */
+/* Product preview (screenshots) */
 .hero__visual {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.product-preview {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  min-height: 320px;
+  margin: 0 auto;
+}
+
+.product-preview__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  background: var(--color-bg-white);
+}
+
+.product-preview__img--back {
+  position: absolute;
+  top: -6%;
+  right: -4%;
+  width: 82%;
+  z-index: 1;
+  opacity: 0.92;
+  transform: rotate(2deg);
+}
+
+.product-preview__img--main {
+  position: relative;
+  z-index: 2;
+  width: 92%;
+  margin-left: auto;
+  box-shadow: 0 20px 50px rgba(26, 16, 64, 0.18);
+}
+
+.product-preview--page {
+  max-width: 480px;
+}
+
+/* Platform showcase */
+.platform-showcase {
+  padding: 100px 0;
+  background: var(--color-bg-white);
+}
+
+.platform-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.platform-shot {
+  margin: 0;
+}
+
+.platform-shot__frame {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  background: var(--color-bg-subtle);
+  aspect-ratio: 16 / 10;
+}
+
+.platform-shot--portrait .platform-shot__frame {
+  aspect-ratio: 4 / 5;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.platform-shot__frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.platform-shot figcaption {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-navy);
+  text-align: center;
+}
+
+.platform-showcase__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.platform-highlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.platform-highlight__content .section-header__title {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.platform-highlight__text {
+  font-size: 17px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+/* Legacy network globe — removido do hero, mantido caso reutilize */
 .network-globe {
   position: relative;
   width: 380px;
@@ -1196,13 +1312,44 @@ ul {
   .hero__inner,
   .about-preview__inner,
   .about-section,
-  .cta__inner {
+  .cta__inner,
+  .platform-highlight {
     grid-template-columns: 1fr;
     gap: 48px;
   }
 
   .hero__visual {
     order: -1;
+  }
+
+  .product-preview {
+    max-width: 420px;
+    min-height: 260px;
+  }
+
+  .platform-showcase__grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .platform-highlight__content .section-header__title {
+    text-align: center;
+  }
+
+  .platform-highlight__text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .platform-highlight__content {
+    text-align: center;
+  }
+
+  .platform-highlight__content .btn {
+    margin: 0 auto;
   }
 
   .network-globe {
