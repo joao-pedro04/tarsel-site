@@ -1,4 +1,0 @@
-#!/bin/bash
-# Remove trailers de co-autoria indesejados das mensagens de commit
-sed -i '' '/cursoragent@cursor\.com/d' "$1"
-sed -i '' '/Co-authored-by: Cursor/d' "$1"
